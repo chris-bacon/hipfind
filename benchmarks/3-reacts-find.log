@@ -26,3 +26,23 @@ Command terminated by signal 2
 197232inputs+0outputs (7major+290minor)pagefaults 0swaps
 0.41user 1.27system 0:11.21elapsed 15%CPU (0avgtext+0avgdata 3880maxresident)k
 198256inputs+0outputs (7major+289minor)pagefaults 0swaps
+0.47user 1.23system 0:10.68elapsed 15%CPU (0avgtext+0avgdata 4092maxresident)k
+198296inputs+0outputs (7major+292minor)pagefaults 0swaps
+0.46user 1.26system 0:10.52elapsed 16%CPU (0avgtext+0avgdata 3896maxresident)k
+198152inputs+0outputs (7major+287minor)pagefaults 0swaps
+0.42user 1.29system 0:10.40elapsed 16%CPU (0avgtext+0avgdata 3912maxresident)k
+198160inputs+0outputs (7major+290minor)pagefaults 0swaps
+0.49user 1.25system 0:11.59elapsed 15%CPU (0avgtext+0avgdata 4028maxresident)k
+198152inputs+0outputs (7major+289minor)pagefaults 0swaps
+0.42user 1.27system 0:10.42elapsed 16%CPU (0avgtext+0avgdata 3896maxresident)k
+197312inputs+0outputs (7major+288minor)pagefaults 0swaps
+0.41user 1.33system 0:10.25elapsed 17%CPU (0avgtext+0avgdata 3828maxresident)k
+198136inputs+0outputs (7major+287minor)pagefaults 0swaps
+0.44user 1.24system 0:10.32elapsed 16%CPU (0avgtext+0avgdata 3956maxresident)k
+198136inputs+0outputs (7major+289minor)pagefaults 0swaps
+0.42user 1.30system 0:10.12elapsed 17%CPU (0avgtext+0avgdata 3964maxresident)k
+198144inputs+0outputs (7major+290minor)pagefaults 0swaps
+0.44user 1.29system 0:10.42elapsed 16%CPU (0avgtext+0avgdata 3932maxresident)k
+198072inputs+0outputs (7major+289minor)pagefaults 0swaps
+0.41user 1.30system 0:10.58elapsed 16%CPU (0avgtext+0avgdata 3924maxresident)k
+197544inputs+0outputs (7major+290minor)pagefaults 0swaps

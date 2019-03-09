@@ -24,7 +24,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 
 |Command|Time (sec)|
 |---|---|
-|Find||
+|Find|5.18|
 |Hipfind using Strings||
 |Hipfind using Text||
 
@@ -32,7 +32,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 
 |Command|Time (sec)|
 |---|---|
-|Find||
+|Find|7.58|
 |Hipfind using Strings||
 |Hipfind using Text||
 
@@ -40,7 +40,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 
 |Command|Time (sec)|
 |---|---|
-|Find||
+|Find|10.53|
 |Hipfind using Strings||
 |Hipfind using Text||
 
@@ -48,7 +48,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 
 |Command|Time (sec)|
 |---|---|
-|Find||
+|Find|18.07|
 |Hipfind using Strings||
 |Hipfind using Text||
 
@@ -56,7 +56,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 
 |Command|Time (sec)|
 |---|---|
-|Find||
+|Find|45.69|
 |Hipfind using Strings||
 |Hipfind using Text||
 
