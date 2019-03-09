@@ -32,31 +32,31 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 
 |Command|Time (sec)|
 |---|---|
-|Find|7.59|
+|Find||
 |Hipfind using Strings||
-|Hipfind using Text|8.30|
+|Hipfind using Text||
 
 ### 3 bucket loads of node-modules of create-react-app
 
 |Command|Time (sec)|
 |---|---|
-|Find|10.26|
+|Find||
 |Hipfind using Strings||
-|Hipfind using Text|17.02|
+|Hipfind using Text||
 
 ### 5 bucket loads of node-modules of create-react-app
 
 |Command|Time (sec)|
 |---|---|
-|Find|17.85|
+|Find||
 |Hipfind using Strings||
-|Hipfind using Text|39.89|
+|Hipfind using Text||
 
 ### 12 bucket loads of node-modules of create-react-app
 
 |Command|Time (sec)|
 |---|---|
-|Find|44.71|
+|Find||
 |Hipfind using Strings||
-|Hipfind using Text|113.84|
+|Hipfind using Text||
 
