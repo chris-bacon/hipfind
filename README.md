@@ -24,39 +24,39 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 
 |Command|Time (sec)|
 |---|---|
-|Find|5.18|
-|Hipfind using Strings||
-|Hipfind using Text||
+|find|5.18|
+|hipfind using Strings||
+|hipfind using Text||
 
 ### 2 bucket loads of node-modules of create-react-app
 
 |Command|Time (sec)|
 |---|---|
-|Find|7.58|
-|Hipfind using Strings||
-|Hipfind using Text||
+|find|7.58|
+|hipfind using Strings||
+|hipfind using Text||
 
 ### 3 bucket loads of node-modules of create-react-app
 
 |Command|Time (sec)|
 |---|---|
-|Find|10.53|
-|Hipfind using Strings||
-|Hipfind using Text||
+|find|10.53|
+|hipfind using Strings||
+|hipfind using Text||
 
 ### 5 bucket loads of node-modules of create-react-app
 
 |Command|Time (sec)|
 |---|---|
-|Find|18.07|
-|Hipfind using Strings||
-|Hipfind using Text||
+|find|18.07|
+|hipfind using Strings||
+|hipfind using Text||
 
 ### 12 bucket loads of node-modules of create-react-app
 
 |Command|Time (sec)|
 |---|---|
-|Find|45.69|
-|Hipfind using Strings||
-|Hipfind using Text||
+|find|45.69|
+|hipfind using Strings||
+|hipfind using Text||
 
