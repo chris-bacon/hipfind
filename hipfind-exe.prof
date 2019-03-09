@@ -1,0 +1,39 @@
+	Sat Mar  9 01:10 2019 Time and Allocation Profiling Report  (Final)
+
+	   hipfind-exe +RTS -N -p -RTS yargs my-app/node_modules
+
+	total time  =        0.00 secs   (4 ticks @ 1000 us, 4 processors)
+	total alloc =   6,711,648 bytes  (excludes profiling overheads)
+
+COST CENTRE                                 MODULE    SRC                         %time %alloc
+
+main                                        Main      app/Main.hs:(11,1)-(22,22)   50.0   44.6
+caseInsensitiveSearchText.lowerCasedFiles   Main      app/Main.hs:33:7-47          25.0   30.8
+caseInsensitiveSearchString                 Main      app/Main.hs:(25,1)-(28,57)   25.0    0.0
+MAIN                                        MAIN      <built-in>                    0.0    1.0
+caseInsensitiveSearchText                   Main      app/Main.hs:(31,1)-(34,62)    0.0    1.9
+caseInsensitiveSearchString.lowerCasedFiles Main      app/Main.hs:27:7-51           0.0   21.0
+
+
+                                                                                                                   individual      inherited
+COST CENTRE                                    MODULE                SRC                        no.     entries  %time %alloc   %time %alloc
+
+MAIN                                           MAIN                  <built-in>                 233          0    0.0    1.0   100.0  100.0
+ CAF                                           System.Directory      <entire-module>            409          0    0.0    0.0     0.0    0.0
+ CAF                                           System.FilePath.Posix <entire-module>            381          0    0.0    0.0     0.0    0.0
+ CAF                                           GHC.Conc.Signal       <entire-module>            346          0    0.0    0.0     0.0    0.0
+ CAF                                           GHC.IO.Encoding       <entire-module>            328          0    0.0    0.0     0.0    0.0
+ CAF                                           GHC.IO.Encoding.Iconv <entire-module>            326          0    0.0    0.0     0.0    0.0
+ CAF                                           GHC.IO.Handle.FD      <entire-module>            318          0    0.0    0.5     0.0    0.5
+ CAF                                           GHC.IO.Handle.Text    <entire-module>            316          0    0.0    0.0     0.0    0.0
+ CAF                                           GHC.Event.Thread      <entire-module>            269          0    0.0    0.0     0.0    0.0
+ CAF                                           GHC.Event.Poll        <entire-module>            249          0    0.0    0.0     0.0    0.0
+ CAF:main1                                     Main                  <no location info>         464          0    0.0    0.0     0.0    0.0
+  main                                         Main                  app/Main.hs:(11,1)-(22,22) 466          1    0.0    0.0     0.0    0.0
+ main                                          Main                  app/Main.hs:(11,1)-(22,22) 467          0   50.0   44.6   100.0   98.4
+  caseInsensitiveSearchString                  Main                  app/Main.hs:(25,1)-(28,57) 468          1   25.0    0.0    25.0   21.0
+   caseInsensitiveSearchString.lowerCasedFiles Main                  app/Main.hs:27:7-51        469          1    0.0   21.0     0.0   21.0
+   caseInsensitiveSearchString.lowerCasedPath  Main                  app/Main.hs:26:7-42        470          1    0.0    0.0     0.0    0.0
+  caseInsensitiveSearchText                    Main                  app/Main.hs:(31,1)-(34,62) 473          1    0.0    1.9    25.0   32.8
+   caseInsensitiveSearchText.lowerCasedFiles   Main                  app/Main.hs:33:7-47        474          1   25.0   30.8    25.0   30.8
+   caseInsensitiveSearchText.lowerCasedPath    Main                  app/Main.hs:32:7-38        475          1    0.0    0.0     0.0    0.0
