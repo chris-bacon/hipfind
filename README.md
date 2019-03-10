@@ -1,5 +1,17 @@
 # hipfind
 
+hipfind is a command-line utility tool to find file and directory names.
+
+## Install
+
+hipfind is written in Haskell, so to build it I recommend `stack`.
+
+```
+stack build --copy-bins
+```
+
+This will install the binary to your `~/.local/bin` directory.
+
 ## Benchmarking
 
 The benchmarking metric I have used is `bucket loads of create-react-app's node-modules`. 
