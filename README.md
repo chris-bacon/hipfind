@@ -2,6 +2,13 @@
 
 hipfind is a command-line utility tool to find file and directory names.
 
+I can't guarantee this will run faster than `find`, and it has far fewer features than `find`, but here are some emojis:
+
+- Guaranteed :boom:
+- Works in :sunny: and :cloud:
+- Written in Haskell which is totally :fire: right now
+- Be a star and give this repo a :star:
+
 ## Install
 
 hipfind is written in Haskell, so to build it I recommend `stack`.
