@@ -18,6 +18,8 @@ This command will clear the PageCache, dentries, and inodes caches. Then you can
 
 This is already implemented in the `benchmarks.sh` script, so you can just run that as sudo to run the benchmarks. These tests will output the time taken to relevant logs in the `benchmarks` directory.
 
+Each benchmark is run 10 times per test to strike a balance between benchmarking times and outliers.
+
 ## Benchmark Output
 
 ### 1 bucket load of node-modules of create-react-app
@@ -26,7 +28,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 |---|---|
 |find|5.18|
 |hipfind using Strings||
-|hipfind using Text||
+|hipfind using Text|4.70|
 
 ### 2 bucket loads of node-modules of create-react-app
 
@@ -34,7 +36,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 |---|---|
 |find|7.58|
 |hipfind using Strings||
-|hipfind using Text||
+|hipfind using Text|7.98|
 
 ### 3 bucket loads of node-modules of create-react-app
 
@@ -42,7 +44,7 @@ This is already implemented in the `benchmarks.sh` script, so you can just run t
 |---|---|
 |find|10.53|
 |hipfind using Strings||
-|hipfind using Text||
+|hipfind using Text|16.60|
 
 ### 5 bucket loads of node-modules of create-react-app
 

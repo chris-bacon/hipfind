@@ -7,14 +7,17 @@ runFindBench() {
 }
 
 runHipfindBench() {
-  /usr/bin/time --output=benchmarks/$1-reacts-hipfind.log --append hipfind ./benchmarking-react/$1-react-create-app/node_modules -name "yargs" +RTS -N
+  /usr/bin/time --output=benchmarks/$1-reacts-hipfind.log --append hipfind yargs ./benchmarking-react/$1-react-create-app/node_modules +RTS -N
 }
 
 NUMTESTS=10
+stack build --copy-bins
+cp $(which hipfind) /usr/local/bin/hipfind # so root can access it 
 
 ##############
 ## Find tests
 ##############
+
 for n in $(seq 1 $NUMTESTS)
 do
   echo "runnng test $n"
@@ -53,6 +56,7 @@ done
 ##############
 ## Hipfind Tests
 ##############
+
 for n in $(seq 1 $NUMTESTS)
 do
   echo "runnng test $n"
