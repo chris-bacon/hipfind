@@ -49,8 +49,7 @@ isDirectory p = FF.isDirectory <$> FF.getFileStatus p
 caseInsensitiveSearchText :: Text.Text -> [Text.Text] -> [Text.Text]
 caseInsensitiveSearchText p files =
   let lowerCasedPath  = Text.toLower p
-      lowerCasedFiles = fmap Text.toLower files
-   in filter (lowerCasedPath `Text.isInfixOf`) lowerCasedFiles
+   in filter (\f -> lowerCasedPath `Text.isInfixOf` Text.toLower f) files
 
 caseSensitiveSearchText :: Text.Text -> [Text.Text] -> [Text.Text]
 caseSensitiveSearchText p = filter (p `Text.isInfixOf`)
