@@ -71,7 +71,7 @@ Each benchmark is run 10 times per test to strike a balance between benchmarking
 |---|---|
 |find|18.07|
 |hipfind using Strings||
-|hipfind using Text||
+|hipfind using Text|39.85|
 
 ### 12 bucket loads of node-modules of create-react-app
 
@@ -79,5 +79,5 @@ Each benchmark is run 10 times per test to strike a balance between benchmarking
 |---|---|
 |find|45.69|
 |hipfind using Strings||
-|hipfind using Text||
+|hipfind using Text|131|
 
