@@ -3,15 +3,15 @@
 module Main where
 
 import           Data.List
-import qualified Data.Text              as Text
+import qualified Data.Text                   as Text
 import           System.Environment
 import           System.Directory
-import qualified Data.Char              as Char
+import qualified Data.Char                   as Char
 import           System.IO.Unsafe
-import qualified System.FilePath        as FP
-import qualified System.Posix.Files     as FF
+import qualified System.FilePath             as FP
+import qualified System.Posix.Files          as FF
 import           Control.Parallel.Strategies
-import qualified Control.Monad.Parallel as Parallel
+import qualified Control.Monad.Parallel      as Parallel
 
 main :: IO ()
 main = do
@@ -48,7 +48,7 @@ isDirectory p = FF.isDirectory <$> FF.getFileStatus p
 
 caseInsensitiveSearchText :: Text.Text -> [Text.Text] -> [Text.Text]
 caseInsensitiveSearchText p files =
-  let lowerCasedPath  = Text.toLower p
+  let lowerCasedPath = Text.toLower p
    in filter (\f -> lowerCasedPath `Text.isInfixOf` Text.toLower f) files
 
 caseSensitiveSearchText :: Text.Text -> [Text.Text] -> [Text.Text]
