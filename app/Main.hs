@@ -19,7 +19,7 @@ main = do
   case args of
     [patternToFind,dirToSearch] -> do
       rootPath <- makeAbsolute dirToSearch
-      
+
       matchedFiles <- traverseAndLogT rootPath (Text.pack patternToFind)
 
       case matchedFiles of
@@ -43,27 +43,8 @@ traverseAndLogT path _pattern = do
 
   return $ resWithPath ++ mconcat aggregateRes
 
-traverseAndLogS :: FilePath -> String -> IO [String]
-traverseAndLogS path _pattern = do
-  dirList <- listDirectory path
-  let res = caseInsensitiveSearchString _pattern dirList
-
-  let subDirs = filter (\x -> unsafePerformIO $ isDirectory (path FP.</> x)) dirList
-  aggregateRes <- Parallel.mapM (\subDir -> traverseAndLogS (path FP.</> subDir) _pattern) subDirs
-
-  let resWithPath = ((path ++ "/")++) <$> res
-
-  return $ resWithPath ++ mconcat aggregateRes
-
 isDirectory :: FilePath -> IO Bool
-isDirectory p = FF.isDirectory <$> FF.getFileStatus p 
-
--- Currently this function is a bit faster, perhaps because the text one has to serialise and de-serialise to and from Strings
-caseInsensitiveSearchString :: String -> [String] -> [String]
-caseInsensitiveSearchString p files = 
-  let lowerCasedPath  = Char.toLower <$> p
-      lowerCasedFiles = fmap Char.toLower <$> files
-   in filter (lowerCasedPath `isInfixOf`) lowerCasedFiles
+isDirectory p = FF.isDirectory <$> FF.getFileStatus p
 
 caseInsensitiveSearchText :: Text.Text -> [Text.Text] -> [Text.Text]
 caseInsensitiveSearchText p files =
@@ -73,4 +54,3 @@ caseInsensitiveSearchText p files =
 
 caseSensitiveSearchText :: Text.Text -> [Text.Text] -> [Text.Text]
 caseSensitiveSearchText p = filter (p `Text.isInfixOf`)
-
